@@ -1,0 +1,3 @@
+Enter number of vehicles: 3
+Enter vehicle types (Car, Truck, Bike, Bus): Car Truck Bike
+Total Toll Tax: ₹170
