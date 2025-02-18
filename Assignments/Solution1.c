@@ -18,4 +18,5 @@ int main()
 	printf ("Enter Monthly Salary:");
 	scanf ("%d", &salary);
 	qualify (age, salary, pre_condition);
+	return 0;
 }
