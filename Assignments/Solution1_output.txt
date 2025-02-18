@@ -1,0 +1,4 @@
+Enter Age:20
+Any Pre-existing Condition? (yes/no):n0 o
+Enter Monthly Salary:30000
+Eligible for Medical Insurance
