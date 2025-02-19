@@ -9,25 +9,36 @@ int main()
     printf("Enter vehicle types (Car, Truck, Bike, Bus): ");
     for (int i = 0; i < n; i++)
     {
+        int valid =1;
         scanf("%s", vehicle);
         switch (vehicle[0])
         {
             case 'C': 
                 if (strcmp(vehicle, "Car") == 0)
                     total_tax += 50;
+                else
+                    valid=0;
                 break;
             case 'T': 
                 if (strcmp(vehicle, "Truck") == 0)
                     total_tax += 100;
+                else
+                    valid=0;
                 break;
             case 'B': 
                 if (strcmp(vehicle, "Bike") == 0)
                     total_tax += 20;
                 else if (strcmp(vehicle, "Bus") == 0)
                     total_tax += 80;
+                else
+                    valid=0;
                 break;
             default:
-                printf("Invalid vehicle type entered!\n");
+                valid = 0;
+            }
+            if (valid == 0)
+            {
+                printf ("Invalid vehicle type entered! Please enter again.\n");
                 i--;
         }
     }
